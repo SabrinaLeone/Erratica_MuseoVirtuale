@@ -16,14 +16,14 @@
     </style>
   </head>
   <body>
-    <a-scene>
-      <a-assets>
+    <a-scene><a-assets>
         <video
           id="VideoMostra"
           src="VideoMostra.mp4"
           loop
           muted
           playsinline
+          crossorigin="anonymous"
         ></video>
       </a-assets>
 
