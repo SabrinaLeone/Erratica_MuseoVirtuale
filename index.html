@@ -16,7 +16,7 @@
     </style>
   </head>
   <body>
-    <a-scene>
+    <a-scene cursor="rayOrigin: mouse">
 
       <!-- CAMERA -->
       <a-entity position="0 1.6 10">
@@ -461,6 +461,30 @@ position="4.89 1.7 -3.5"
         color="#8FAFC1"
       ></a-box>
 
+      <!-- Statua vicino alla parete destra -->
+<a-entity position="-14.2 0 -6"> 
+
+  <!-- Statua cilindro bassa e larga -->
+  <a-cylinder position="0 0.65 0" height="1" radius="0.5" color="#8FAFC1"></a-cylinder>
+
+  <!-- Pulsante cliccabile davanti alla statua -->
+  <a-plane
+    position="0.5 1.9 0.15" 
+    width="1.2"
+    height="0.35"
+    color="#8FAFC1"
+    class="clickable"
+    rotation="0 90 0"  
+  text="value: Clicca per esplorare l'arte:\nLacerazione FV-64 \ndi Pierluca;
+        align: center;
+        color: #FFF;
+        font: mozillavr;
+        width: 4;"
+  onclick="window.open('https://raw.githubusercontent.com/SabrinaLeone/Erratica_MuseoVirtuale/main/statua_1.jpg','_blank')">
+</a-plane>
+
+</a-entity>
+
       <!-- Base opaca della teca -->
       <a-box
         position="-10.95 0.5 1.5"
@@ -669,6 +693,7 @@ position="4.89 1.7 -3.5"
   </body>
 
 </html>
+
 
 
 
