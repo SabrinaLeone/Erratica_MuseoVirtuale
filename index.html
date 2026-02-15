@@ -16,12 +16,16 @@
     </style>
   </head>
   <body>
-    <a-scene cursor="rayOrigin: mouse">
+    <a-scene 
 
-      <!-- CAMERA -->
-      <a-entity position="0 1.6 10">
-        <a-camera wasd-controls="acceleration: 30" look-controls></a-camera>
-      </a-entity>
+     <!-- CAMERA --> <a-entity position="0 1.6 10">
+  <a-camera
+  wasd-controls="acceleration: 30"
+  look-controls
+  cursor="rayOrigin: mouse"
+  raycaster="objects: .clickable">
+</a-camera>
+</a-entity>
 
       <!-- LUCI -->
       <a-light type="ambient" intensity="0.6"></a-light>
@@ -506,6 +510,34 @@ material="shader: flat">
         material="transparent: true; opacity: 0.5; color: #FFFFFF"
       ></a-box>
 
+      <!-- Piano semplice dietro al testo, cliccabile -->
+<a-plane
+  position="-10.95 1.4 1.55"  
+  rotation="0 180 0"
+  width="3.5"
+  height="0.5"
+  color="#EFE8D8"  
+  class="clickable"
+  id="btnTeca">
+</a-plane>
+
+<!-- Testo sopra il piano -->
+<a-entity
+position="-10.95 1.4 1.54"
+  rotation="0 180 0"
+  text="value: Avvicinati per svelare l'opera;
+        align: center;
+        color: #8FAFC1;  
+        width: 5;">
+</a-entity>
+
+<!-- Script per aprire l'immagine -->
+<script>
+  document.querySelector('#btnTeca').addEventListener('click', function () {
+    window.open('https://raw.githubusercontent.com/SabrinaLeone/Erratica_MuseoVirtuale/main/teca_1.jpg','_blank');
+  });
+</script>
+
       <!-- Varco verso stanza 3 -->
       <a-box
         position="-18.1 1.6 2"
@@ -703,6 +735,7 @@ material="shader: flat">
   </body>
 
 </html>
+
 
 
 
