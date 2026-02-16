@@ -805,7 +805,7 @@ src="https://raw.githubusercontent.com/SabrinaLeone/Erratica_MuseoVirtuale/main/
 
   <!-- Testo -->
   <a-text
-    value="Si alza il sipario:\nscopri il primo look!\n\nAlberto Biasi x\n\n'I Contain Multitudes'"
+    value="Si alza il sipario:\nscopri il primo look!\n\nGrazia Varisco x\n\n'I Contain Multitudes'"
     align="center"
     anchor="center"
     baseline="center"
@@ -820,6 +820,40 @@ src="https://raw.githubusercontent.com/SabrinaLeone/Erratica_MuseoVirtuale/main/
   document.querySelector('#quadro-look1').addEventListener('click', function () {
     window.open(
       'https://raw.githubusercontent.com/SabrinaLeone/Erratica_MuseoVirtuale/main/Tavola1.png',
+      '_blank'
+    );
+  });
+</script>
+
+      <!-- Quadro interattivo Parete Destra - Stanza 3 -->
+<a-entity position="-13.7 2 8.5" rotation="0 -90 0">
+  
+  <!-- Piano cliccabile -->
+  <a-plane
+    id="quadro-look2"
+    width="6"
+    height="2.5"
+    color="#B89FCC"
+    class="clickable"
+  ></a-plane>
+
+  <!-- Testo -->
+  <a-text
+    value="Step 2: la forma si evolve!\n\nAlberto Biasi x\n\n'I Contain Multitudes'"
+    align="center"
+    anchor="center"
+    baseline="center"
+    width="4"
+    color="#FFFFFF"
+    position="0 0 0.01"
+  ></a-text>
+
+</a-entity>
+
+<script>
+  document.querySelector('#quadro-look2').addEventListener('click', function () {
+    window.open(
+      'https://raw.githubusercontent.com/SabrinaLeone/Erratica_MuseoVirtuale/main/Tavola2.png',
       '_blank'
     );
   });
@@ -879,6 +913,7 @@ src="https://raw.githubusercontent.com/SabrinaLeone/Erratica_MuseoVirtuale/main/
   </body>
 
 </html>
+
 
 
 
