@@ -872,6 +872,40 @@ src="https://raw.githubusercontent.com/SabrinaLeone/Erratica_MuseoVirtuale/main/
   });
 </script>
 
+      <!-- Quadro interattivo Tavola3 - Parete Destra Stanza 3 -->
+<a-entity position="-13.7 2 16" rotation="0 -90 0">
+  
+  <!-- Piano cliccabile -->
+  <a-plane
+    id="quadro-look3"
+    width="6"
+    height="2.5"
+    color="#B89FCC"
+    class="clickable"
+  ></a-plane>
+
+  <!-- Testo per Tavola3 -->
+  <a-text
+    value="Scopri l'essenza del progetto!\n\nMarinella Senatore x\n\n'I Contain Multitudes'"
+    align="center"
+    anchor="center"
+    baseline="center"
+    width="4"
+    color="#FFFFFF"
+    position="0 0 0.01"
+  ></a-text>
+
+</a-entity>
+
+<script>
+  document.querySelector('#quadro-look3').addEventListener('click', function () {
+    window.open(
+      'https://raw.githubusercontent.com/SabrinaLeone/Erratica_MuseoVirtuale/main/Tavola3.png',
+      '_blank'
+    );
+  });
+</script>
+
       <!-- Quadro Sezione2 - Parete Sinistra Stanza 3 -->
 <a-entity position="-23.3 2 21.5" rotation="0 90 0">
   
@@ -950,6 +984,7 @@ src="https://raw.githubusercontent.com/SabrinaLeone/Erratica_MuseoVirtuale/main/
   </body>
 
 </html>
+
 
 
 
