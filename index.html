@@ -1060,6 +1060,54 @@ src="https://raw.githubusercontent.com/SabrinaLeone/Erratica_MuseoVirtuale/main/
         color="#D0C4AA"
       ></a-box>
 
+       <!-- Scultura centrale - Stanza 4 -->
+
+<!-- Sfera base -->
+<a-sphere
+  position="-28.5 0.4 17"
+  radius="0.4"
+  color="#CBBFA4">
+</a-sphere>
+
+<!-- Sfera superiore -->
+<a-sphere
+  position="-28.5 1.05 17"
+  radius="0.25"
+  color="#E2D8C3">
+</a-sphere>
+
+<!-- Piano cliccabile dietro il testo -->
+<a-plane
+  id="tavola4-link"
+  position="-28.5 1.68 16.95" 
+  width="4.3"                   
+  height="1.2"                 
+  color="#000"
+  opacity="0"
+  transparent="true"
+  class="clickable">
+</a-plane>
+
+<!-- Testo centrale - Stanza 4 -->
+<a-text
+  value="Il look che unisce!\n\nE. Piermattei x\nI Contain Multitudes"
+  position="-28.5 1.68 17"  
+  rotation="0 0 0"           
+  align="center"
+  anchor="center"
+  width="4.3"                
+  color="#8C7A5B">           
+</a-text>
+
+<script>
+  document.querySelector('#tavola4-link').addEventListener('click', function () {
+    window.open(
+      'https://raw.githubusercontent.com/SabrinaLeone/Erratica_MuseoVirtuale/main/Tavola4.png',
+      '_blank'
+    );
+  });
+</script>
+
         <!-- Quadro conclusivo - Stanza 4 -->
       <a-entity position="-33.35 2 17" rotation="0 90 0">
 
@@ -1100,6 +1148,7 @@ src="https://raw.githubusercontent.com/SabrinaLeone/Erratica_MuseoVirtuale/main/
   </body>
 
 </html>
+
 
 
 
