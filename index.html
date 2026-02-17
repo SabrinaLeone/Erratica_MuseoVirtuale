@@ -776,7 +776,7 @@ src="https://raw.githubusercontent.com/SabrinaLeone/Erratica_MuseoVirtuale/main/
     anchor="center"
     baseline="center"
     width="4"
-    color="#FFFFFF"
+    color="#A287C4"
     position="0 0 0.01"
   ></a-text>
 </a-entity>
@@ -872,6 +872,39 @@ src="https://raw.githubusercontent.com/SabrinaLeone/Erratica_MuseoVirtuale/main/
   });
 </script>
 
+      <!-- Spot centrale -->
+<a-light
+  type="spot"
+  position="-13.7 4 16"
+  rotation="-60 -90 0"
+  intensity="0.8"
+  angle="28"
+  penumbra="0.6"
+  color="#FFF4E8">
+</a-light>
+
+<!-- Spot sinistro -->
+<a-light
+  type="spot"
+  position="-14.7 4 16"
+  rotation="-60 -90 0"
+  intensity="0.6"
+  angle="28"
+  penumbra="0.7"
+  color="#FFF4E8">
+</a-light>
+
+<!-- Spot destro -->
+<a-light
+  type="spot"
+  position="-12.7 4 16"
+  rotation="-60 -90 0"
+  intensity="0.6"
+  angle="28"
+  penumbra="0.7"
+  color="#FFF4E8">
+</a-light>
+
       <!-- Quadro interattivo Tavola3 - Parete Destra Stanza 3 -->
 <a-entity position="-13.7 2 16" rotation="0 -90 0">
   
@@ -905,6 +938,44 @@ src="https://raw.githubusercontent.com/SabrinaLeone/Erratica_MuseoVirtuale/main/
     );
   });
 </script>
+
+      <!-- Immagine Dynys -->
+<a-entity position="-13.7 2 22" rotation="0 -90 0">
+
+  <a-plane
+    width="3.75"
+    height="2.5"
+    src="https://raw.githubusercontent.com/SabrinaLeone/Erratica_MuseoVirtuale/main/Dynys.png">
+  </a-plane>
+
+</a-entity>
+
+      <!-- Luce spot sopra il quadro -->
+<a-light
+  type="spot"
+  position="-18.5 3.8 23.8"
+  rotation="-60 0 0"
+  color="#F3EFFF"
+  intensity="1.2"
+  angle="30"
+  penumbra="0.4"
+  distance="15"
+  decay="2"
+  target="#quadro-centro"
+></a-light>
+
+<!-- Quadro Parete Fondo - Stanza 3 -->
+<a-entity position="-18.5 2 24.7"
+  rotation="0 180 0">
+  
+  <a-plane
+    id="quadro-centro"
+    width="3.75"
+    height="2.5"
+    src="https://raw.githubusercontent.com/SabrinaLeone/Erratica_MuseoVirtuale/main/Galliani_NelSonno.jpg"
+  ></a-plane>
+
+</a-entity>
 
       <!-- Quadro Sezione2 - Parete Sinistra Stanza 3 -->
 <a-entity position="-23.3 2 21.5" rotation="0 90 0">
@@ -984,6 +1055,7 @@ src="https://raw.githubusercontent.com/SabrinaLeone/Erratica_MuseoVirtuale/main/
   </body>
 
 </html>
+
 
 
 
