@@ -1108,6 +1108,74 @@ src="https://raw.githubusercontent.com/SabrinaLeone/Erratica_MuseoVirtuale/main/
   });
 </script>
 
+      <!-- Tavola6 - Parete laterale inferiore -->
+<a-entity position="-28.5 2 12.11">
+
+  <!-- Fondo cliccabile -->
+  <a-plane
+    id="quadro-tavola6"
+    width="6"
+    height="2.5"
+    color="#C2B596"
+    class="clickable">
+  </a-plane>
+
+  <!-- Testo -->
+  <a-text
+    value="Radici di seta: la visione serale!\n\nAlice Romano x\n\nI Contain Multitudes"
+    align="center"
+    anchor="center"
+    baseline="center"
+    width="4"
+    color="#FFFFFF"
+    position="0 0 0.02">
+  </a-text>
+
+</a-entity>
+
+<script>
+  document.querySelector('#quadro-tavola6').addEventListener('click', function () {
+    window.open(
+      'https://raw.githubusercontent.com/SabrinaLeone/Erratica_MuseoVirtuale/main/Tavola7.png',
+      '_blank'
+    );
+  });
+</script>
+
+<!-- Tavola7 - Parete laterale opposta -->
+<a-entity position="-28.5 2 21.89" rotation="0 180 0">
+
+  <!-- Fondo cliccabile -->
+  <a-plane
+    id="quadro-tavola7"
+    width="6"
+    height="2.5"
+    color="#C2B596"
+    class="clickable">
+  </a-plane>
+
+  <!-- Testo -->
+  <a-text
+    value="Identita' fluide\n\nGiuliana Cunèaz x\n\nI Contain Multitudes"
+    align="center"
+    anchor="center"
+    baseline="center"
+    width="4"
+    color="#FFFFFF"
+    position="0 0 0.02">
+  </a-text>
+
+</a-entity>
+
+<script>
+  document.querySelector('#quadro-tavola7').addEventListener('click', function () {
+    window.open(
+      'https://raw.githubusercontent.com/SabrinaLeone/Erratica_MuseoVirtuale/main/Tavola8.png',
+      '_blank'
+    );
+  });
+</script>
+
         <!-- Quadro conclusivo - Stanza 4 -->
       <a-entity position="-33.35 2 17" rotation="0 90 0">
 
@@ -1148,6 +1216,7 @@ src="https://raw.githubusercontent.com/SabrinaLeone/Erratica_MuseoVirtuale/main/
   </body>
 
 </html>
+
 
 
 
