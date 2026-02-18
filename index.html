@@ -20,13 +20,14 @@
   <body>
     <a-scene 
 
-     <!-- CAMERA --> <a-entity position="0 1.6 10">
+   <!-- CAMERA -->
+<a-entity position="0 1.6 10">
   <a-camera
-  wasd-controls="acceleration: 30"
-  look-controls
-  cursor="rayOrigin: mouse"
-  raycaster="objects: .clickable">
-</a-camera>
+    wasd-controls="acceleration: 30; enabled: true"
+    look-controls="pointerLockEnabled: false; touchEnabled: true; magicWindowTrackingEnabled: true"
+    cursor="rayOrigin: mouse"
+    raycaster="objects: .clickable">
+  </a-camera>
 </a-entity>
 
       <!-- LUCI -->
@@ -1218,6 +1219,7 @@ src="https://raw.githubusercontent.com/SabrinaLeone/Erratica_MuseoVirtuale/main/
   </body>
 
 </html>
+
 
 
 
